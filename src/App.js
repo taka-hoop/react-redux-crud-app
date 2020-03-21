@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { Component} from 'react';
 
 class App extends Component {
-  render(){
-    return <div><h1>hello world</h1></div>;
+  render() {
+    return(
+      <React.Fragment>
+        <label htmlFor="bar">bar</label>
+        <input type="text" onChange={() => {console.log("push click")}} />;
+      </React.Fragment>
+    )
   }
 }
 
